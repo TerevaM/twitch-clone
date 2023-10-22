@@ -1,12 +1,11 @@
 import Navbar from "@/components/organisms/navbar"
-import Channels from "@/components/organisms/channels"
+import MainContent from "@/components/organisms/maincontent"
 
 export default function Home() {
   return (
     <main>
       <Navbar />
-      <Channels />
-
+      <MainContent />
     </main>
   )
 }
