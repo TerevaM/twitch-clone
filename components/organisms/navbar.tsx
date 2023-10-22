@@ -1,6 +1,5 @@
 import "@/css/navbar.css";
 import Image from "next/image";
-import Prime from "../../public/assets/svg/prime.svg";
 import TwitchLogo from "@/pictures/ahouioui.png";
 export default function Navbar() {
   return (
