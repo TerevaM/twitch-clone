@@ -1,0 +1,143 @@
+#channels {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 2;
+  display: block;
+  margin-top: 55px;
+  padding-top: 10px;
+  padding-bottom: 65px;
+  width: 300px;
+  height: 100vh;
+  background-color: #1f1f23;
+}
+
+/*rec live*/
+
+.in-live {
+  background-color: red;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+/*FOR YOU*/
+
+#for-u {
+  text-transform: none;
+}
+/* FOLLOW CHANNELS */
+
+.title-channels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.title-channels > svg {
+  width: 30px;
+  filter: invert(1);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.title-channels > svg:hover{
+  background-color: #34343b2c;
+}
+
+/* LIST CHANNELS */
+
+.hide-icons-channel {
+  display: none !important;
+  width: 20px;
+  margin: auto;
+  filter: invert(0.6);
+}
+
+.logo-channels {
+  min-width: 30px;
+  min-height: 30px;
+  width: 30px;
+  height: 30px;
+  background-color: blueviolet;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.channels-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/*channel*/
+.channels-list > li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 40px;
+}
+
+/*afficher plus*/
+
+.channels-list > li:last-child > p:hover {
+  text-decoration: underline;
+}
+.channels-list > li:last-child > p {
+  padding: 10px;
+  font-size: 12px;
+  color: #A46AF8;
+}
+
+.channels-list > li:hover:not(:last-child) {
+  background-color: #26262c;
+}
+
+/* elements of list */
+.channels-list > li > *{
+  color: #dedee3;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/*category*/
+.users-channel > div > p {
+  font-weight: 300;
+  color: rgb(185, 185, 185);
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*Déconnecté(e)*/
+.channels-list > li > h6 {
+  justify-content: flex-end;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  #channels {
+    width: 50px;
+    overflow: hidden;
+  }
+  .channels-list > li > h6,
+  .channels-list > li > div > h5,
+  .users-channel > div > *,
+  .title-channels,
+  .channels-list > li:last-child
+  {
+    display: none;
+  }
+  .channels-list > li:hover:not(:last-child) {
+  background-color: transparent;
+}
+.hide-icons-channel {
+  display: block !important;
+}
+}

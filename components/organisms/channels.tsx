@@ -1,4 +1,4 @@
-import "@/css/channels.css";
+import "@/css/channels/channels.css";
 import ChannelCellule from "../atoms/channels/channel";
 import ChannelFollow from "../atoms/channels/svg/channelfollow";
 import ChannelRecommand from "../atoms/channels/svg/channelrecommand";
@@ -9,7 +9,7 @@ export default function Channels() {
   return (
     <>
       <div id="channels">
-        <div className="title-channels">
+        <div className="title-channels" id="for-u">
           <h3>Pour vous</h3>
           <ChannelClose />
         </div>
@@ -19,9 +19,9 @@ export default function Channels() {
         </div>
         <ul className="channels-list">
           <ChannelFollow />
-          <ChannelCellule name="MikraL" live={true} />
-          <ChannelCellule name="Kraken" live={true} />
-          <ChannelCellule name="LordofZgur" live={false} />
+          <ChannelCellule name="MikraL" live={true} category="Discussion" />
+          <ChannelCellule name="Kraken" live={true} category="VALORANT" />
+          <ChannelCellule name="Lordfzgur" live={false} />
           <ChannelCellule name="Yassalade" live={false} />
           <ChannelCellule name="Abdallast" live={false} />
           <li>
@@ -33,11 +33,23 @@ export default function Channels() {
         </div>
         <ul className="channels-list">
           <ChannelRecommand />
-          <ChannelCellule name="Yuyueiei" live={true} />
-          <ChannelCellule name="Chaynes" live={true} />
-          <ChannelCellule name="Le_V_ia_gra" live={true} />
-          <ChannelCellule name="nadimelodrame" live={true} />
-          <ChannelCellule name="Flolemo" live={true} />
+          <ChannelCellule name="Yuyueiei" live={true} category="Discussion" />
+          <ChannelCellule
+            name="Chaynes"
+            live={true}
+            category="Mortal Kombat 1"
+          />
+          <ChannelCellule
+            name="Le_V_iano"
+            live={true}
+            category="Discussion"
+          />
+          <ChannelCellule name="nadimelodrame" live={true} category="CSGO" />
+          <ChannelCellule
+            name="Amiralflank"
+            live={true}
+            category="VALORANT"
+          />
           <li>
             <p>Afficher plus</p>
           </li>
