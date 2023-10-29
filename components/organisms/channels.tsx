@@ -39,17 +39,9 @@ export default function Channels() {
             live={true}
             category="Mortal Kombat 1"
           />
-          <ChannelCellule
-            name="Le_V_iano"
-            live={true}
-            category="Discussion"
-          />
+          <ChannelCellule name="Le_V_iano" live={true} category="Discussion" />
           <ChannelCellule name="nadimelodrame" live={true} category="CSGO" />
-          <ChannelCellule
-            name="Amiralflank"
-            live={true}
-            category="VALORANT"
-          />
+          <ChannelCellule name="Amiralflank" live={true} category="VALORANT" />
           <li>
             <p>Afficher plus</p>
           </li>

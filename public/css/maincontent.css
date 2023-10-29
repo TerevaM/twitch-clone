@@ -139,7 +139,6 @@
 #channel-of {
   width: 100%;
   height: 400px;
-  background-color: green;
   padding: 30px;
 }
 
@@ -151,24 +150,24 @@
   margin-top: 15px;
   width: 100%;
   height: 290px;
-  /* background-color: red; */
   padding-right: 10px;
-  margin-left: 10px;
+  margin: 0 0 20px 10px;
 }
 
 .channels-card > li {
   position: relative;
   width: 100%;
   height: 300px;
-  background-color: yellow;
 }
 
 .card-video {
+  background-size: cover;
+  background-position: center;
   top: 10px;
+  margin-bottom: 10px;
   position: relative;
   width: 100%;
   height: 65%;
-  background-color: blue;
   transition: all 0.1s;
 }
 
@@ -177,7 +176,6 @@
   position: absolute;
   width: 100%;
   height: 65%;
-  background-color: pink;
 }
 
 .card-video:hover {
@@ -185,32 +183,112 @@
   transition: all 0.1s;
 }
 
- .border1 {
-  display: none;
-  top: 5px;
+.card-user-infos {
+  display: flex;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+.card-user-infos > .logo-channels {
+  margin: 0;
+}
+
+.card-user-infos > div > h3 {
+  font-size: 14px;
+  display: inline-block;
+}
+
+.viewers {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  padding: 3px;
+  background-color: rgba(0, 0, 0, 0.623);
+  font-size: 13px;
+}
+
+.line-more {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.432);
+}
+
+.more-cards {
+  position: absolute;
+  display: flex;
+  padding: 3px 5px;
+  background-color: #0E0E10;
+  font-size: 13px;
+  font-weight: 500;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #a46af8;
+  border-radius: 5px;
+}
+
+.more-cards:hover {
+
+  background-color: #2E2E35;
+}
+
+.more-cards > * {
+  color: #a46af8;
+}
+
+.more-cards > svg {
+  width: 20px;
+}
+
+/* .border1 {
+  top: -5px;
   left: 0px;
   position: absolute;
-  background-color: pink;
   width: 14px;
   height: 10px;
   transform: rotate(-45deg);
   transition: all 0.1s;
-  }
+}
 
-  .card-video:hover + .border1 {
-    display: block;
-  }
+.card-video:hover ~ .border1 {
+  display: block;
+}
 
 .border2 {
   right: -7px;
   bottom: 4px;
   position: absolute;
-  background-color: pink;
   width: 14px;
   height: 10px;
   transform: rotate(-45deg);
   transition: all 0.1s;
-  border-end-end-radius: 3px;
+} */
+
+/*title list channel*/
+
+#channel-of > h4 {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+#channel-of > h4 > span {
+  color:#ac74fc;
+}
+#channel-of > h4 > span:hover {
+  color:#a46af8;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#user-card-stats {
+  padding: 0 10px;
+}
+
+#user-card-stats > h6 {
+  color: rgb(168, 168, 168);
+  font-weight: 400;
+  margin-top: 3px;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 1000px) {
