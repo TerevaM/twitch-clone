@@ -2,7 +2,7 @@ import "@/css/maincontent.css";
 import Channels from "@/components/organisms/channels";
 import Leftbutton from "../atoms/channels/svg/leftbutton";
 import Rightbutton from "../atoms/channels/svg/rightbutton";
-import ChannelCards from "./channelcards";
+import ChannelCards from "../molecules/channelcards";
 
 
 export default function MainContent() {
@@ -35,9 +35,9 @@ export default function MainContent() {
             </section>
           </div>
         </div>
-        <ChannelCards categoryGame="Overwatch 2"/>
-        <ChannelCards categoryGame="VALORANT"/>
-        
+        <ChannelCards categoryGame="Overwatch 2" category_id={0}/>
+        <ChannelCards categoryGame="VALORANT" category_id={1}/>
+
       </div>
     </div>
   );
