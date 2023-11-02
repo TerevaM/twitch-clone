@@ -2,6 +2,7 @@ interface UserProps {
   name: string;
   live: boolean;
   category?: string;
+  logo: string;
 }
 
 
@@ -10,7 +11,7 @@ export default function ChannelCellule(props: UserProps) {
   return (
     <li>
       <div className="users-channel">
-        <div className="logo-channels"></div>
+        <div className="logo-channels" id={props.logo}></div>
         <div>
           <h5>{props.name}</h5>
           <p>{props.category}</p>
@@ -18,7 +19,12 @@ export default function ChannelCellule(props: UserProps) {
       </div>
       { props.live ? (
         <>
+          {props.logo != "fefe" ? (
           <h6><div className="in-live"></div>{rand_viewers}</h6>
+          ):
+          (
+            <h6><div className="in-live"></div>0</h6>
+          )}
         </>
       ) : (
         <h6 className="disconnected">Déconnecté(e)</h6>

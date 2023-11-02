@@ -146,7 +146,7 @@
 .channels-card {
   display: grid;
   overflow: hidden;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 10px;
   margin-top: 15px;
   width: 100%;
@@ -269,6 +269,22 @@
 
 /*title list channel*/
 
+.title-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-height: 20px;
+}
+.title-card > h3 {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.title-card > svg {
+  width: 14px ;
+  fill: white;
+}
 #channel-of > h4 {
   font-weight: 500;
   font-size: 1.2em;
@@ -283,7 +299,8 @@
 }
 
 #user-card-stats {
-  padding: 0 10px;
+  padding-left: 10px;
+  width: 100%;
 }
 
 #user-card-stats > h6 {
@@ -293,6 +310,11 @@
   font-size: 12px;
 }
 
+@media screen and (min-width: 650px) {
+  .channels-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media screen and (min-width: 1000px) {
   .channels-card {
     grid-template-columns: repeat(3, 1fr);

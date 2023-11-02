@@ -19,11 +19,11 @@ export default function Channels() {
         </div>
         <ul className="channels-list">
           <ChannelFollow />
-          <ChannelCellule name="MikraL" live={true} category="Discussion" />
-          <ChannelCellule name="Kraken" live={true} category="VALORANT" />
-          <ChannelCellule name="Lordfzgur" live={false} />
-          <ChannelCellule name="Yassalade" live={false} />
-          <ChannelCellule name="Abdallast" live={false} />
+          <ChannelCellule name="MikraL" live={true} category="Discussion" logo="mikral"/>
+          <ChannelCellule name="Kraken" live={true} category="VALORANT" logo="kraken" />
+          <ChannelCellule name="Lordfzgur" live={false} logo="lord"/>
+          <ChannelCellule name="Yassalade" live={false} logo="yass"/>
+          <ChannelCellule name="Abdallast" live={false} logo="abdou"/>
           <li>
             <p>Afficher plus</p>
           </li>
@@ -33,15 +33,17 @@ export default function Channels() {
         </div>
         <ul className="channels-list">
           <ChannelRecommand />
-          <ChannelCellule name="Yuyueiei" live={true} category="Discussion" />
+          <ChannelCellule name="Yuyueiei" live={true} category="Discussion" logo="yuei"/>
           <ChannelCellule
             name="Chaynes"
             live={true}
             category="Mortal Kombat 1"
+            logo="chains"
           />
-          <ChannelCellule name="Le_V_iano" live={true} category="Discussion" />
-          <ChannelCellule name="nadimelodrame" live={true} category="CSGO" />
-          <ChannelCellule name="Amiralflank" live={true} category="VALORANT" />
+          <ChannelCellule name="FefeLeBronze" live={true} category="MHUR" logo="fefe"/>
+          <ChannelCellule name="Le_V_iano" live={true} category="Discussion" logo="virgil"/>
+          <ChannelCellule name="nadimelodrame" live={true} category="CSGO" logo="nadir" />
+          <ChannelCellule name="Amiralflank" live={true} category="VALORANT" logo="amir"/>
           <li>
             <p>Afficher plus</p>
           </li>

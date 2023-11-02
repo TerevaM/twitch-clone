@@ -43,7 +43,7 @@ export default function Card(props: UserProps) {
       <div
         className="card-video"
         style={{
-          backgroundImage: `url(../assets/pictures/${props.url})`,
+          backgroundImage: `url(../assets/pictures/live/${props.url})`,
         }}
       >
         <span className="viewers">{rand_viewers} spectateurs</span>
@@ -52,7 +52,16 @@ export default function Card(props: UserProps) {
       <div className="card-user-infos">
         <div className="logo-channels"></div>
         <div id="user-card-stats">
-          <h3>{props.title}</h3>
+          <div className="title-card">
+            <h3>{props.title}</h3>
+            <svg
+              viewBox="0 0 20 20"
+              focusable="false"
+              aria-hidden="true"
+            >
+              <path d="M10 18a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM8 4a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"></path>
+            </svg>
+          </div>
           <h6>{props.name}</h6>
           <h6>{props.category}</h6>
         </div>

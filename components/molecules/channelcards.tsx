@@ -37,31 +37,31 @@ const overwatch = [
 /* images valorant */
 const valorant = [
   {
-    name: "1",
-    url: "live_user_gf_iguel-440x248.jpg",
-    title: "Rankeds Compétitifs : Montée en SR"
+    name: "brokybrawkstv",
+    url: "live_user_brokybrawkstv-440x248.jpg",
+    title: "🔥 Rankeds Valorant ",
   },
   {
-    name: "2",
-    url: "live_user_laraa_tv-440x248.jpg",
-    title: "Stratégies de Maître : Analyses Parties"
+    name: "grimm",
+    url: "live_user_grimm-440x248.jpg",
+    title: "Tir de Précision : Gameplay Valorant",
   },
   {
-    name: "SoSucre",
-    url: "live_user_sosucre-440x248.jpg",
-    title: "🚀 Grind de Compétition pour Top Classement"
+    name: "loupiote3",
+    url: "live_user_loupiote3-440x248.jpg",
+    title: "🚀 Nouveaux Skins Époustouflants",
   },
   {
-    name: "Necros",
-    url: "live_user_necros-440x248.jpg",
-    title: "🎮 Amusement avec les Abonnés !"
+    name: "Sniper_Biscuit",
+    url: "live_user_sniper_biscuit-440x248.jpg",
+    title: "🎮 Valorant Fun en Équipe ! 🤩",
   },
   {
-    name: "Atrandos",
-    url: "live_user_atrandos-440x248.jpg",
-    title: "🎉 Nouveaux Skins et Événements"
-  }
-]
+    name: "T2kimchi",
+    url: "live_user_t2kimchi-440x248.jpg",
+    title: "🏆 Tournois et Entraînements Valorant 🚀",
+  },
+];
 
 export default function ChannelCards(props: CardProps) {
   /* props choix des images par categorie */

@@ -62,7 +62,8 @@
   min-height: 30px;
   width: 30px;
   height: 30px;
-  background-color: blueviolet;
+  background-size: cover;
+  background-position: center;
   border-radius: 50%;
   margin: 0 10px;
 }
@@ -118,6 +119,40 @@
   font-size: 14px;
   font-weight: 400;
   padding: 10px;
+}
+
+#mikral {
+  background-image: url("../../assets/pictures/channels/mikral.png");
+}
+#kraken {
+  background-image: url("../../assets/pictures/channels/kraken.png");
+}
+#lord {
+  background-image: url("../../assets/pictures/channels/lord.png");
+}
+#yass {
+  background-image: url("../../assets/pictures/channels/yass.jpg");
+}
+#abdou {
+  background-image: url("../../assets/pictures/channels/abdou.jpg");
+}
+#fefe {
+  background-image: url("../../assets/pictures/channels/fefe.jpg");
+}
+#nadir {
+  background-image: url("../../assets/pictures/channels/nadir.jpg");
+}
+#yuei {
+  background-image: url("../../assets/pictures/channels/yuei.png");
+}
+#virgil {
+  background-image: url("../../assets/pictures/channels/virgil.png");
+}
+#chains {
+  background-image: url("../../assets/pictures/channels/chains.jpg");
+}
+#amir {
+  background-image: url("../../assets/pictures/channels/amir.jpg");
 }
 
 @media screen and (max-width: 1200px) {
