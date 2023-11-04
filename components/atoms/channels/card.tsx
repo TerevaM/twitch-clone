@@ -43,7 +43,7 @@ export default function Card(props: UserProps) {
       <div
         className="card-video"
         style={{
-          backgroundImage: `url(../assets/pictures/live/${props.url})`,
+          backgroundImage: `url(../../assets/pictures/live/${props.url})`,
         }}
       >
         <span className="viewers">{rand_viewers} spectateurs</span>
