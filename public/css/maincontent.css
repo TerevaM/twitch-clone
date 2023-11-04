@@ -332,3 +332,34 @@
     grid-template-columns: repeat(5, 1fr);
   }
 }
+
+#gf_iguel {
+  background-image: url("../../public/assets/pictures/live/live_user_gf_iguel-440x248.jpg");
+}
+#laraa_tv {
+  background-image: url("../../public/assets/pictures/live/live_user_laraa_tv-440x248.jpg");
+}
+#sosucre {
+  background-image: url("../../public/assets/pictures/live/live_user_sosucre-440x248.jpg");
+}
+#necros {
+  background-image: url("../../public/assets/pictures/live/live_user_necros-440x248.jpg");
+}
+#atrandos {
+  background-image: url("../../public/assets/pictures/live/live_user_atrandos-440x248.jpg");
+}
+#brokybrawkstv {
+  background-image: url("../../public/assets/pictures/live/live_user_brokybrawkstv-440x248.jpg");
+}
+#grimm {
+  background-image: url("../../public/assets/pictures/live/live_user_grimm-440x248.jpg");
+}
+#loupiote3 {
+  background-image: url("../../public/assets/pictures/live/live_user_loupiote3-440x248.jpg");
+}
+#sniper_biscuit {
+  background-image: url("../../public/assets/pictures/live/live_user_sniper_biscuit-440x248.jpg");
+}
+#t2kimchi {
+  background-image: url("../../public/assets/pictures/live/live_user_t2kimchi-440x248.jpg");
+}

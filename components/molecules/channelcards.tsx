@@ -9,27 +9,27 @@ interface CardProps {
 const overwatch = [
   {
     name: "GF_Iguel",
-    url: "live_user_gf_iguel-440x248.jpg",
+    id: "gf_iguel",
     title: "Rankeds Compétitifs : Montée en SR"
   },
   {
     name: "Laraa_tv",
-    url: "live_user_laraa_tv-440x248.jpg",
+    id: "laraa_tv",
     title: "Stratégies de Maître : Analyses Parties"
   },
   {
     name: "SoSucre",
-    url: "live_user_sosucre-440x248.jpg",
+    id: "sosucre",
     title: "🚀 Grind de Compétition pour Top Classement"
   },
   {
     name: "Necros",
-    url: "live_user_necros-440x248.jpg",
+    id: "necros",
     title: "🎮 Amusement avec les Abonnés !"
   },
   {
     name: "Atrandos",
-    url: "live_user_atrandos-440x248.jpg",
+    id: "atrandos",
     title: "🎉 Nouveaux Skins et Événements"
   }
 ]
@@ -38,27 +38,27 @@ const overwatch = [
 const valorant = [
   {
     name: "brokybrawkstv",
-    url: "live_user_brokybrawkstv-440x248.jpg",
+    id: "brokybrawkstv",
     title: "🔥 Rankeds Valorant ",
   },
   {
     name: "grimm",
-    url: "live_user_grimm-440x248.jpg",
+    id: "grimm",
     title: "Tir de Précision : Gameplay Valorant",
   },
   {
     name: "loupiote3",
-    url: "live_user_loupiote3-440x248.jpg",
+    id: "loupiote3",
     title: "🚀 Nouveaux Skins Époustouflants",
   },
   {
     name: "Sniper_Biscuit",
-    url: "live_user_sniper_biscuit-440x248.jpg",
+    id: "sniper_biscuit",
     title: "🎮 Valorant Fun en Équipe ! 🤩",
   },
   {
     name: "T2kimchi",
-    url: "live_user_t2kimchi-440x248.jpg",
+    id: "t2kimchi",
     title: "🏆 Tournois et Entraînements Valorant 🚀",
   },
 ];
@@ -78,7 +78,7 @@ export default function ChannelCards(props: CardProps) {
               <Card
                 key={index}
                 name={user.name}
-                url={user.url}
+                id={user.id}
                 title={user.title}
                 category={props.categoryGame}
               />

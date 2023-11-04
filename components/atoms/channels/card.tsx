@@ -1,6 +1,6 @@
 interface UserProps {
   name: string;
-  url: string;
+  id: string;
   title: string;
   category: string;
 }
@@ -42,9 +42,7 @@ export default function Card(props: UserProps) {
       </div>
       <div
         className="card-video"
-        style={{
-          backgroundImage: `url(../../assets/pictures/live/${props.url})`,
-        }}
+        id={props.id}
       >
         <span className="viewers">{rand_viewers} spectateurs</span>
         <span className="live">live</span>
