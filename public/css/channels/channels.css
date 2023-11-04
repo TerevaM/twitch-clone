@@ -129,12 +129,15 @@
 }
 #lord {
   background-image: url("../../assets/pictures/channels/lord.png");
+  filter: grayscale(1);
 }
 #yass {
   background-image: url("../../assets/pictures/channels/yass.jpg");
+  filter: grayscale(1);
 }
 #abdou {
   background-image: url("../../assets/pictures/channels/abdou.jpg");
+  filter: grayscale(1);
 }
 #fefe {
   background-image: url("../../assets/pictures/channels/fefe.jpg");
